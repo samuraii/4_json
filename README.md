@@ -1,17 +1,15 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Срипт позволяет распарсить и вывести в консоль json в красивом формате.
 
 # Quickstart
-
-[TODO]
 
 Example of script launch on Linux, Python 3.5:
 
 ```bash
 
-$ python pprint_json.py <path to file>
-# TODO add output example
+$ python pprint_json.py
+# После чего нужно указать путь до файла на локальной машине
 
 ```
 

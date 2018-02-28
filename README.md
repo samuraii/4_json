@@ -7,7 +7,7 @@
 Пример работы скрипта для json-файла с содержанием: 
 
 ```json
-[{"key":"value","key2":value}]
+[{"key":"value","key2":"value"}]
 ```
 
 ```bash

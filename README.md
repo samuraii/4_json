@@ -1,15 +1,22 @@
 # Prettify JSON
 
-Срипт позволяет распарсить и вывести в консоль json в красивом формате.
+Скрипт позволяет красиво отобразить json файл в консоль
 
 # Quickstart
 
-Example of script launch on Linux, Python 3.5:
+Пример работы скрипта для json-файла с содержанием: 
+
+```json
+[{"key":"value","key2":value}]
+```
 
 ```bash
+$ python pprint_json.py <path to file>
 
-$ python pprint_json.py
-# После чего нужно указать путь до файла на локальной машине
+{
+    "key": "value",
+    "key2": "value"
+}
 
 ```
 

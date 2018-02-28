@@ -15,7 +15,6 @@ def pretty_print_json(data_from_file):
 
 
 if __name__ == '__main__':
-
         path_to_file = sys.argv[1]
 
         try:

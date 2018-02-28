@@ -9,8 +9,13 @@ def load_data(filepath):
 
 
 def pretty_print_json(data_from_file):
-    json_data = json.dumps(data_from_file, ensure_ascii=False,
-                   separators=(',', ':'), indent=2)
+    json_data = json.dumps(
+            data_from_file, 
+            ensure_ascii=False,
+            separators=(',', ':'), 
+            indent=2
+    )
+    
     print(json_data)
 
 

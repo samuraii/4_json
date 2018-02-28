@@ -1,24 +1,26 @@
 import json
+import sys
 
 
 def load_data(filepath):
     with open(filepath, encoding='utf-8') as data_file:
-        json_content = json.loads(data_file.read())
-    return json_content
+        data = json.loads(data_file.read())
+    return data
 
 
-def pretty_print_json(json_content):
-    print(json.dumps(json_content, ensure_ascii=False, separators=(',', ':'), indent=2))
+def pretty_print_json(data):
+    d = json.dumps(data, ensure_ascii=False,
+                   separators=(',', ':'), indent=2)
+    print(d)
 
 
 if __name__ == '__main__':
-    while True:
-        path = input('Укажите путь до json файла ')
+
+        path_to_file = sys.argv[1]
 
         try:
-            json_content = load_data(path)
-            pretty_print_json(json_content)
-            break
+            data = load_data(path_to_file)
+            pretty_print_json(data)
         except FileNotFoundError:
             print('Чё-то нет такого файла.')
         except json.decoder.JSONDecodeError:

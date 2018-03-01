@@ -15,7 +15,6 @@ def pretty_print_json(data_from_file):
         separators=(',', ':'),
         indent=2
     )
-
     print(json_data)
 
 

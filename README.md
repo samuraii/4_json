@@ -1,17 +1,24 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Скрипт позволяет красиво отобразить json файл в консоль
 
 # Quickstart
 
 [TODO]
 
-Example of script launch on Linux, Python 3.5:
+Пример работы скрипта для json-файла с содержанием: 
+
+```json
+[{"key":"value","key2":value}]
+```
 
 ```bash
-
 $ python pprint_json.py <path to file>
-# TODO add output example
+
+{
+    "key": "value",
+    "key2": "value"
+}
 
 ```
 
